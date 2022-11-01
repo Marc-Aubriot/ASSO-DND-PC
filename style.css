@@ -1,29 +1,69 @@
 /* Custom Color Set */
 :root {
-    --CCS-Color1: #000000;
-    --CCS-Color2: #000000;
+    --CCS-Color1: #000000; /*background (herobanner)*/
+    --CCS-Color2: #ffffff; /*font color (herobanner) */
     --CCS-Color3: #000000;
     --CCS-Color4: #000000;
     --CCS-Color5: #000000;
 }
 
-/* HEADER : Logo & Title */
+body, main {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* HEADER : Logo & Title & NavList & Hamburger icon*/
+header {
+    min-height: 10vh;
+}
 .siteLogo {
     width: 50px;
     height: 50px;
 }
-
-/* @media (max-width: 850px) {
-    .siteLogo {
-        width: 100px;
-        height: 100px;
-    }
-} 
-*/
-
-/* HEADER : NavList & Hamburger icon */
 .hamburgerBtn {
     position: absolute;
     top: 0;
     right: 0;
 }
+
+
+/* HERO BANNER */
+.heroBanner {
+    background-image: url("./img/s1pwdg0vbpc61.webp");
+    background-color: var(--CCS-Color1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
+    width: 100wh;
+}
+.heroBannerText {
+    color: var(--CCS-Color2);
+    position: absolute;
+    top: 38vh;
+}
+@media (min-width: 850px) {
+    .heroBanner {
+        height: 80vh;
+    }
+    .heroBannerText {
+        top: 80vh;
+    }
+} 
+
+/* HERO BANNER : text animation */
+.heroBanner span {display: inline-block;opacity: 0;filter: blur(4px);}
+.heroBanner span:nth-child(1) {animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(2) {animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(3) {animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(4) {animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(5) {animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(6) {animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(7) {animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(8) {animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(9) {animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(10) {animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(11) {animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+.heroBanner span:nth-child(12) {animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+@keyframes fade-in {100% {opacity: 1;filter: blur(0);}}
