@@ -15,12 +15,14 @@ p,h1,h2,h3,h4,h5 {
 body, main {
     padding: 0;
     margin: 0;
+    width: 100vw;
 }
 
 
 /* HEADER : Logo & Title & NavList & Hamburger icon*/
 header {
     min-height: 10vh;
+    width: 100%;
     background-color: var(--CCS-Color4);
 }
 .siteLogo {
@@ -51,12 +53,37 @@ header {
     position: absolute;
     top: 38vh;
 }
+.heroBannerBardFeatureOffset {
+    margin-top: -8vh;
+}
+.bardBtn {
+    position: relative;
+    background-color: rgba(0,0,0,0);
+    color: rgba(255,255,255,0.5);
+    border: none;
+    border-radius: 35%;
+    left: 70vw;
+    top: -32vh;
+    height: 10vh;
+    width: 20vw;
+    transition: all 0.3s;
+    font-size: 10px;
+}
+.bardBtn:hover {
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(255,255,255,1);
+    top: -37vh;
+    font-size: 16px;
+}
 @media (min-width: 850px) {
     .heroBanner {
         height: 80vh;
     }
     .heroBannerText {
         top: 80vh;
+    }
+    .heroBannerBardFeatureOffset {
+        margin-top: 0vh;
     }
 } 
 

@@ -48,13 +48,13 @@
     <body class="d-flex flex-column">
 
         <!-- Header & Navigation -->
-        <header class="row">
+        <header class="row g-0">
             <nav class="navbar navbar-expand-sm">
 
                 <!-- Logo & Title -->
                 <div class="col-12 col-sm-6">
                     <div class="d-flex">
-                        <a href="#logoTitle" title="Logo" class="ms-5">
+                        <a href="#logoTitle" title="Logo" class="ps-5">
                             <img
                                 src="./img/Dice-d20.svg"
                                 title="Un dé à 20 faces"
@@ -62,14 +62,14 @@
                                 class="siteLogo"
                             >
                         </a>
-                        <h1 class="navbar-brand ms-3 mt-2">Donjon et Dragon</h1>
+                        <h1 class="navbar-brand ps-3 mt-2">Donjon et Dragon</h1>
                     </div>
                 </div>
                 
                 <!-- Navlist & Hamburger icon -->
                 <div class="col-12 col-sm-6 d-flex">
                     <button 
-                        class="navbar-toggler hamburgerBtn my-3 me-3"
+                        class="navbar-toggler hamburgerBtn my-3 me-4"
                         type="button"
                         id="hamburgerBtn"
                         data-bs-toggle="collapse"
@@ -124,11 +124,52 @@
                     <span>vous</span>
                     <span>attend.</span>
                 </div>
-                
             </section>
 
+            <!-- Hero Banner : Bard Music Feature -->
+            <aside>
+                <button class="mt-2 bardBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#bardPlaylist" aria-controls="bardPlaylist">
+                    Barde! Musique!
+                </button>
+
+                <article class="offcanvas offcanvas-start" tabindex="-1" id="bardPlaylist" aria-labelledby="bardPlaylist">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="bardPlaylist">Choix du morceau</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                        
+                    <div class="offcanvas-body">
+                        <p>Tavern Song</p>
+                        <audio loop controls>
+                            <source src="/music/tavern1.mp3" type="audio/mpeg">
+                            Votre navigateur ne supporte pas le contenu audio.
+                        </audio>
+                        
+                        <p class="mt-3">Might&Magic Song</p>
+                        <audio loop controls>
+                            <source src="/music/might&magic.mp3" type="audio/mpeg">
+                            Votre navigateur ne supporte pas le contenu audio.
+                        </audio>
+
+                        <p class="mt-3">Farm Song</p>
+                        <audio loop controls>
+                            <source src="/music/farm.mp3" type="audio/mpeg">
+                            Votre navigateur ne supporte pas le contenu audio.
+                        </audio>
+
+                        <p class="mt-3">Town Song</p>
+                        <audio loop controls>
+                            <source src="/music/town.mp3" type="audio/mpeg">
+                            Votre navigateur ne supporte pas le contenu audio.
+                        </audio>
+                        <br>
+                        <a href="https://www.serpentsoundstudios.com/royalty-free-music/celtic-fantasy" target="_blank">La page de l'artiste.</a>
+                    </div>
+                </article>
+            </aside>
+
             <!-- About us -->
-            <section class="row pt-5 mt-5">
+            <section class="row p-2 heroBannerBardFeatureOffset">
                 <h2 class="text-center pb-2">Qui sommes-nous ?</h2>
                 <p>Donjon et dragon - Pontault-Combault (Dnd PC) est une association à but non lucrative regroupant des joueurs de donjons et dragons, pathfinder, ou tout autre jeu de rôle, à Pontault-Combault.</p>
                 <p>Jeux de rôle, jeux de plateau, jeux vidéos, culture geek; un large choix de passe-temps pour nos membres qui sont tous passionnés par ces univers !</p>
@@ -137,8 +178,8 @@
             </section>
 
             <!-- Our activities -->
-            <section id="carouselID" class="row pt-5 mt-5 activitiesSection carousel slide" data-bs-ride="true">
-                <h2 class="text-center pb-2">Nos activités</h2>
+            <section id="carouselID" class="row pt-5 mt-5 p-2 activitiesSection carousel slide" data-bs-ride="true">
+                <h2 class="text-center">Nos activités</h2>
 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselID" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -199,22 +240,56 @@
             </section>
 
             <!-- Our members -->
-            <section class="row pt-5 mt-5">
-                <h2 class="text-center pb-2">Nos membres (cards)</h2>
-                <h3>Membre 1 / 2 / 3</h3>
+            <section class="row p-5 mt-5">
+                <h2 class="text-center mb-2">Nos membres</h2>
+                
+                <div class="card my-3 pt-2">
+                    
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="" title="">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Fake Member 1</h5>
+                        <h6 class="card-subtitle">Le barbare de la bande</h6>
+                        <p class="card-text mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque numquam asperiores, perferendis veniam quas impedit.</p>
+                        <a href="#" class="card-link">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card my-3 pt-2">
+                    
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="" title="">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Fake Member 2</h5>
+                        <h6 class="card-subtitle">Le magicien</h6>
+                        <p class="card-text mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat et omnis fugiat quo reiciendis autem.</p>
+                        <a href="#" class="card-link">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card my-3 pt-2">
+                    
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="" title="">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Fake Member 3</h5>
+                        <h6 class="card-subtitle">Le voleur</h6>
+                        <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laboriosam placeat, odit dolorem exercitationem corrupti!</p>
+                        <a href="#" class="card-link">Go somewhere</a>
+                    </div>
+                </div>
             </section>
 
             <!-- Contact us -->
-            <section class="row pt-5 mt-5">
+            <section class="row p-2 mt-5">
                 <h2 class="text-center pb-2">Contact US (again)</h2>
-                <p>Si tu es intéressés par ces univers, rejoins-nous! Tu peux aussi simplement venir satisfaire ta curiosité, beaucoups sont déjà venus pour voir... et sont toujours parmis nous !</p>
+                <p>Si tu es intéressé par ces univers, rejoins-nous! Tu peux aussi simplement venir satisfaire ta curiosité, beaucoups sont déjà venus pour voir... et sont toujours parmis nous !</p>
                 <button>Nous rejoindre</button>
             </section>
 
         </main>
 
         <!-- Footer, link, socials network, copyright etc -->
-        <footer class="row py-4 mt-5 text-center">
+        <footer class="row py-4 mt-5 text-center g-0">
             <p>sitemap?</p>
             <p>Tous droits réservés</p>
         </footer>
