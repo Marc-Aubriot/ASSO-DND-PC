@@ -48,8 +48,8 @@
     <body class="d-flex flex-column">
 
         <!-- Header & Navigation -->
-        <header class="row g-0">
-            <nav class="navbar navbar-expand-sm">
+        <header>
+            <nav class="navbar navbar-expand-md">
 
                 <!-- Logo & Title -->
                 <div class="col-12 col-sm-6">
@@ -105,10 +105,10 @@
         </header>
         
         <!-- Homepage Main content -->
-        <main class="container-xxl">
+        <main>
 
             <!-- Hero Banner -->
-            <section class="row heroBanner text-center">
+            <section class="heroBanner text-center">
                 
                 <div class="fst-italic heroBannerText">
                     <span>Entrez</span>
@@ -169,16 +169,15 @@
             </aside>
 
             <!-- About us -->
-            <section class="row p-2 heroBannerBardFeatureOffset">
+            <section class="container p-2 heroBannerBardFeatureOffset">
                 <h2 class="text-center pb-2">Qui sommes-nous ?</h2>
                 <p>Donjon et dragon - Pontault-Combault (Dnd PC) est une association à but non lucrative regroupant des joueurs de donjons et dragons, pathfinder, ou tout autre jeu de rôle, à Pontault-Combault.</p>
                 <p>Jeux de rôle, jeux de plateau, jeux vidéos, culture geek; un large choix de passe-temps pour nos membres qui sont tous passionnés par ces univers !</p>
-                <p>Alors, si toi aussi tu es passionné, et que tu souhaites jouer proche de chez toi, n'hésites pas une seconde et contacte nous.</p>
-                <button>Nous contacter</button>
+                <p>Alors, si toi aussi tu es passionné, et que tu souhaites jouer proche de chez toi, n'hésites pas une seconde, <a href="joinus.html">contacte nous.</a></p>
             </section>
 
             <!-- Our activities -->
-            <section id="carouselID" class="row pt-5 mt-5 p-2 activitiesSection carousel slide" data-bs-ride="true">
+            <section id="carouselID" class="container pt-5 mt-5 p-2 activitiesSection carousel slide" data-bs-ride="true">
                 <h2 class="text-center">Nos activités</h2>
 
                 <div class="carousel-indicators">
@@ -190,37 +189,37 @@
                 <div class="carousel-inner">
 
                 
-                <article class="carousel-item active">
+                <article class="carousel-item active text-center">
                     <h3>Jeux de rôle</h3>
                     <img
                         src="./img/des-jeu-de-rôle.webp"
                         title=""
                         alt=""
-                        class="carouselImg"
+                        class="carouselImg rounded mb-3"
                     >
                     <p>Les jeux de rôle permettent de te plonger dans le corps d'un personnage que tu auras créé et d'un univers tabletop avec d'autres joueurs aussi fous que toi ! </p>
                     <p>Incarne ton héros et fais le vivre aux travers d'aventures palpitantes !</p>
                 </article>
                 
-                <article class="carousel-item">
+                <article class="carousel-item text-center">
                     <h3>Jeux vidéos</h3>
                     <img
                         src="./img/baldurs-gate-Hall-Of-Wonders.png"
                         title=""
                         alt=""
-                        class="carouselImg"
+                        class="carouselImg rounded mb-3"
                     >
                     <p>Baldur's Gate est un classique indétrônable du RPG sur PC ! Qui ne connait pas l'univers des Royaumes Oubliés ?</p>
                     <p>Mais n'ait pas peur, si tu ne connais pas Baldur's Gate, nos membres seront ravis de te faire découvrir ce jeu, et de t'aider à construire ton propre autel sacré du geek cachés de tous dans ta chambre...</p>
                 </article>
 
-                <article class="carousel-item">
+                <article class="carousel-item text-center">
                     <h3>Jeux de plateau</h3>
                     <img
                         src="./img/diaporama-50-meilleurs-jeux-de-rle1.jpg"
                         title=""
                         alt=""
-                        class="carouselImg"
+                        class="carouselImg rounded mb-3"
                     >
                     <p>A 10 autours d'une table de la taverne, nous ne te promettons pas une soirée de tout repos... mais n'ait crainte, nous avons de quoi te revigorer avec nos breuvages secrets... Hahaha !!</p>
                 </article>
@@ -240,50 +239,59 @@
             </section>
 
             <!-- Our members -->
-            <section class="row p-5 mt-5">
-                <h2 class="text-center mb-2">Nos membres</h2>
+            <section class="container text-center p-5 mt-5">
+                <h2 class="mb-2">Nos membres</h2>
                 
-                <div class="card my-3 pt-2">
-                    
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="" title="">
+                <div class="card-group">
+                    <div class="card my-3 pt-2">
+                        <h5 class="card-title">Happy Facepalm</h5>
+                        <img src="/img/barbarian.jpg" class="card-img-top memberCard" alt="" title="">
 
-                    <div class="card-body">
-                        <h5 class="card-title">Fake Member 1</h5>
-                        <h6 class="card-subtitle">Le barbare de la bande</h6>
-                        <p class="card-text mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque numquam asperiores, perferendis veniam quas impedit.</p>
-                        <a href="#" class="card-link">Go somewhere</a>
+                        <div class="card-body">
+                            <h6 class="card-subtitle">Le barbare de la bande</h6>
+                            <p class="card-text mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque numquam asperiores, perferendis veniam quas impedit.</p>
+                            <a href="#" class="card-link">Go somewhere</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card my-3 pt-2">
-                    
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="" title="">
+                    <div class="card my-3 pt-2">
+                        <h5 class="card-title">Géni Bigbrain</h5>
+                        <img src="/img/wizard.jpg" class="card-img-top memberCard" alt="" title="">
 
-                    <div class="card-body">
-                        <h5 class="card-title">Fake Member 2</h5>
-                        <h6 class="card-subtitle">Le magicien</h6>
-                        <p class="card-text mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat et omnis fugiat quo reiciendis autem.</p>
-                        <a href="#" class="card-link">Go somewhere</a>
+                        <div class="card-body">
+                            <h6 class="card-subtitle">Le charla... magicien</h6>
+                            <p class="card-text mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat et omnis fugiat quo reiciendis autem.</p>
+                            <a href="#" class="card-link">Go somewhere</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card my-3 pt-2">
-                    
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="" title="">
+                    <div class="card my-3 pt-2">
+                        <h5 class="card-title">Lisa</h5>
+                        <img src="/img/rogue.jpg" class="card-img-top memberCard" alt="" title="">
 
-                    <div class="card-body">
-                        <h5 class="card-title">Fake Member 3</h5>
-                        <h6 class="card-subtitle">Le voleur</h6>
-                        <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laboriosam placeat, odit dolorem exercitationem corrupti!</p>
-                        <a href="#" class="card-link">Go somewhere</a>
+                        <div class="card-body">   
+                            <h6 class="card-subtitle">La voleuse de coeur</h6>
+                            <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laboriosam placeat, odit dolorem exercitationem corrupti!</p>
+                            <a href="#" class="card-link">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <!-- Fantasy, mais pas que ! -->
+            <section class="container text-center p-5 mt-5">
+                <h2 class="mb-2">On a de la Fantaisie, mais aussi de la Sci-fi !</h2>
+                <img src="/img/wh40k1.jpg" alt="" class="gameImg mb-1">
+                <img src="/img/wh40k2.jpg" alt="" class="gameImg mb-1">
+                <img src="/img/wh40k3.jpg" alt="" class="gameImg mb-1">
+                <h6>Warhammer 40 000 !</h6>
+                <p>Viens défendre l'impérium of Man contre les Xénos ! Au nom de l'Empereur !</p>
+            </section>
+
             <!-- Contact us -->
-            <section class="row p-2 mt-5">
-                <h2 class="text-center pb-2">Contact US (again)</h2>
-                <p>Si tu es intéressé par ces univers, rejoins-nous! Tu peux aussi simplement venir satisfaire ta curiosité, beaucoups sont déjà venus pour voir... et sont toujours parmis nous !</p>
-                <button>Nous rejoindre</button>
+            <section class="container p-2 mt-5 text-center">
+                <h2 class="pb-2">Le tour de table est fini ! Mais...</h2>
+                <p>Si tu es intéressé par ces univers, que cette taverne numérique te donne envie, rejoins-nous! Tu peux aussi simplement venir satisfaire ta curiosité, beaucoups sont déjà venus pour voir... et sont toujours parmis nous !</p>
+                <p><a href="joinus.html">La vraie taverne est par là !</a></p>
             </section>
 
         </main>

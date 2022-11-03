@@ -22,7 +22,6 @@ body, main {
 /* HEADER : Logo & Title & NavList & Hamburger icon*/
 header {
     min-height: 10vh;
-    width: 100%;
     background-color: var(--CCS-Color4);
 }
 .siteLogo {
@@ -46,12 +45,13 @@ header {
     background-position: center;
     background-size: cover;
     height: 35vh;
-    width: 100wh;
+    width: 100%;
 }
 .heroBannerText {
     color: var(--CCS-Color2);
     position: absolute;
     top: 38vh;
+    left: 15vw;
 }
 .heroBannerBardFeatureOffset {
     margin-top: -8vh;
@@ -110,11 +110,13 @@ section h3 {
 .activitiesSection {
     background-color: var(--CCS-Color5);
     color: var(--CCS-Color2);
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
 }
 .carouselImg {
-    width: 90vw;
-    margin-bottom: 3vh;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }
 .carousel-indicators {
     position: relative;
@@ -123,6 +125,19 @@ section h3 {
 .activitiesSection a {
     font-family: 'Roboto', sans-serif;
 }
+.memberCard {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+}
+.gameImg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+}
+
 
 /* FOOTER */
 footer {
