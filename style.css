@@ -18,6 +18,9 @@ body, main {
     width: 100vw;
 }
 
+.noStyleLink {
+    text-decoration: none;
+}
 
 /* HEADER : Logo & Title & NavList & Hamburger icon*/
 header {
@@ -108,10 +111,11 @@ section h3 {
     text-align: center;
 }
 .activitiesSection {
-    background-color: var(--CCS-Color5);
     color: var(--CCS-Color2);
-    min-height: 100vh;
+    min-height: 70vh;
     height: fit-content;
+    background: rgb(139,4,4);
+    background: linear-gradient(93deg, rgba(139,4,4,1) 0%, rgba(21,27,62,1) 30%, rgba(21,27,62,1) 70%, rgba(139,4,4,1) 100%);
 }
 .carouselImg {
     width: 100%;
@@ -136,6 +140,11 @@ section h3 {
     max-width: 300px;
     height: auto;
     margin: auto;
+}
+.wh40kSection {
+    color: var(--CCS-Color2);
+    background: rgb(1,0,36);
+    background: linear-gradient(90deg, rgba(1,0,36,1) 0%, rgba(121,9,19,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 
