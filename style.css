@@ -22,6 +22,12 @@ body, main {
     text-decoration: none;
 }
 
+.responsiveImg {
+    width: 100%;
+    height: auto;
+}
+
+
 /* HEADER : Logo & Title & NavList & Hamburger icon*/
 header {
     min-height: 10vh;
