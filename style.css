@@ -152,7 +152,11 @@ section h3 {
     background: rgb(1,0,36);
     background: linear-gradient(90deg, rgba(1,0,36,1) 0%, rgba(121,9,19,1) 100%, rgba(0,212,255,1) 100%);
 }
-
+.dayCard {
+    border: solid 2px var(--CCS-Color5);
+    border-radius: 20px;
+    padding: 20px;
+}
 
 /* FOOTER */
 footer {
