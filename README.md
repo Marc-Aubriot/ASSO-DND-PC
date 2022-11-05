@@ -1,8 +1,6 @@
 # ASSO-DND-PC
-Evaluation 01 - HTML CSS BOOTSTRAP : Association (fictive) Donjon et dragon Pontault Combault
+Evaluation 01 - HTML CSS BOOTSTRAP
 
-todo:
-Modification du readme pour qu'il soit plus pertinent
-check le site
-deploy
-check les bugs, faire une branche pour préserver le main stable et etablir un ci cd, et deploy le bugfix merge branch
+Il s'agit d'une association fictive présentant un collectif de joueurs de donjon et dragon.
+
+Le site est composé de 4 pages responsives: Accueil, Evènements, Ressources et Nous contacter.
