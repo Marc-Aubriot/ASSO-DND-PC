@@ -5,5 +5,4 @@ todo:
 Modification du readme pour qu'il soit plus pertinent
 check le site
 deploy
-google app pas responsive
 check les bugs, faire une branche pour préserver le main stable et etablir un ci cd, et deploy le bugfix merge branch
